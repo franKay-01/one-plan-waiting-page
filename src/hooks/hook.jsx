@@ -18,31 +18,7 @@ const useAxios = () => {
       const axiosClient = axios.create({
         baseURL : process.env.BASE_URL
       });
-      // const jsonDat a = JSON.stringify({email: body})
-      // let axiosConfig = {
-      //   headers: {
-      //       'Content-Type': 'application/json;charset=UTF-8',
-      //       // "Access-Control-Allow-Origin": "*",
-      //   }
-      // };
-      // const requestOptions = {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ title: 'React POST Request Example' })
-      // };
-      // const response = await fetch('https://reqres.in/api/posts', requestOptions);
-      // const data = await response.json();
-      // console.log(BASE_URL)
-      // axios({
-      //   method: 'POST',
-      //   url: BASE_URL,
-      //   headers: {
-      //     'content-type': 'text/html'
-      //   },
-      //   body: {"email": body}
-      // }).then(res => {
-      //   console.log(JSON.stringify(res))
-      // })
+      
       const res = await axios.post(`${BASE_URL}/early_subscriptions`, fd)
 
       console.log(JSON.stringify(res))
