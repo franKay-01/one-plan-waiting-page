@@ -12,11 +12,13 @@ const useAxios = () => {
   const executeReq = async (body) => {
     
     try {
+      const fd = new FormData()
+      fd.append('email', body)
 
       const axiosClient = axios.create({
         baseURL : process.env.BASE_URL
       });
-      const jsonData = JSON.stringify({email: body})
+      // const jsonDat a = JSON.stringify({email: body})
       // let axiosConfig = {
       //   headers: {
       //       'Content-Type': 'application/json;charset=UTF-8',
@@ -41,7 +43,7 @@ const useAxios = () => {
       // }).then(res => {
       //   console.log(JSON.stringify(res))
       // })
-      const res = await axios.post(`${BASE_URL}/early_subscriptions`, jsonData)
+      const res = await axios.post(`${BASE_URL}/early_subscriptions`, fd)
 
       console.log(JSON.stringify(res))
       // return res
