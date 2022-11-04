@@ -1,21 +1,15 @@
 import logo from './assets/logo.png'
-import vector1 from './assets/vector_1.svg'
-import vector2 from './assets/vector_2.svg'
-import vector3 from './assets/vector_3.svg'
-import vector4 from './assets/vector_4.svg'
+import vector1 from './assets/vector_1.png'
+import vector2 from './assets/vector_2.png'
 import Clock from "./components/Clock"
-import coin1 from './assets/coin_1.svg'
-import coin3 from './assets/coin_3.svg'
-import axios from "axios"
-import { useState } from "react";
+import coin1 from './assets/coin_1.png'
+import coin3 from './assets/coin_3.png'
 import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
   let deadline = "November, 14, 2022";
-  
 
   return (
-    
     <div className="main relative">
       <ToastContainer />
 
@@ -45,17 +39,12 @@ function App() {
           </div>
         </div>
         <div className='linear-container'>
-          <div className='grid grid-cols-3'>
-            <div className="ml-4">
-              <img className='hidden md:hidden xl:block opacity-10 live-img' src={vector4}/>
-            </div>
+          <div className='grid grid-cols-1 justify-center'>
+            
             <div className="mt-12 grid grid-cols-1 place-items-center mb-8">
-              <p className='text-xl text-default-banner mb-4 live-in'>We will be live in:</p>
+              <p className='text-xl text-white mb-4 live-in'>We will be live in:</p>
 
               <Clock deadline={deadline} />
-            </div>
-            <div>
-              <img className='hidden md:hidden xl:block opacity-30 live-img' src={vector3}/>
             </div>
           </div>
         </div>

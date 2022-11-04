@@ -114,16 +114,17 @@ body {
 }
 
 .main {
-  /* background-image: url('./assets/backdrop.png'); */
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: contain;
+  background-color: #ffffff;
 }
 
 .linear-container {
   left: 0px;
   top: 620.96px;
-
-  background: linear-gradient(114.34deg, #08182A 25.15%, #04825F 97.84%);
+  background: url(../src/assets/time-background.png);
+  background-repeat: no-repeat;
+  background-color: #17477E;
 }
 
 code {
