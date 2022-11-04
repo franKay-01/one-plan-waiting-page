@@ -33,27 +33,27 @@ const Clock = ({ deadline }) => {
 
   return (
     <div className="flex space-x-4">
-      <div className="Clock-days time-card">
+      <div className="hidden time-card Clock-days ">
         <div className="grid grid-cols-1 place-items-center">
-          <div className="text-default-blue text-4xl font-semibold">{leading0(days)}</div>
+          <div className="text-default-blue text-5xl font-semibold">{leading0(days)}</div>
           <div className="text-default-blue text-sm font-normal">Days</div>
         </div>
       </div>
-      <div className="Clock-hours time-card">
+      <div className="hidden time-card Clock-days ">
         <div className="grid grid-cols-1 place-items-center">
-          <div className="text-default-blue text-4xl font-semibold">{leading0(hours)}</div>
+          <div className="text-default-blue text-5xl font-semibold">{leading0(hours)}</div>
           <div className="text-default-blue text-sm font-normal">Hours</div>
         </div>
       </div>
-      <div className="Clock-minutes time-card">
+      <div className="hidden time-card Clock-days ">
         <div className="grid grid-cols-1 place-items-center">
-          <div className="text-default-blue text-4xl font-semibold">{leading0(minutes)}</div>
+          <div className="text-default-blue text-5xl font-semibold">{leading0(minutes)}</div>
           <div className="text-default-blue text-sm font-normal">Minutes</div>
         </div>
       </div>
-      <div className="Clock-seconds time-card">
+      <div className="hidden time-card Clock-days ">
         <div className="grid grid-cols-1 place-items-center">
-          <div className="text-default-blue text-4xl font-semibold">{leading0(seconds)}</div>
+          <div className="text-default-blue text-5xl font-semibold">{leading0(seconds)}</div>
           <div className="text-default-blue text-sm font-normal">Seconds</div>
         </div>
       </div>

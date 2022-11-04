@@ -14,20 +14,32 @@ const useAxios = () => {
     try {
       const fd = new FormData()
       fd.append('email', body)
-
-      const axiosClient = axios.create({
-        baseURL : process.env.BASE_URL
-      });
       
       const res = await axios.post(`${BASE_URL}/early_subscriptions`, fd)
 
-      console.log(JSON.stringify(res))
+      console.log(" RESPONSE "+JSON.stringify(res))
+
       // return res
     }
     catch (err) {
       console.log(err)
       setError(err)
     } finally { setIsPending(false) }
+
+    try {
+      axios.post(`${BASE_URL}/early_subscriptions`, {
+          method: 'POST',
+          body: JSON.stringify({
+              email: body
+          }),
+          headers: {
+              "Content-type": "application/json; charset=UTF-8"
+          }
+      }).then(response => JSON.stringify(response))
+        .then(json => console.log(json));
+    } catch (error) {
+        console.warn(error);
+    }
   }
   /*
   Execute Req

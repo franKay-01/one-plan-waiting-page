@@ -78,16 +78,21 @@ body {
 }
 
 .coin-two {
-  left: 12rem;
+  left: 14rem;
   position: absolute;
-  top: 23rem;
+  top: 20rem;
   width: 5rem;
 }
 
+.heading {
+  z-index: 99;
+}
+
 .coin-one {
-  left: 7rem;
+  left: 10rem;
   position: absolute;
-  top: 30rem;
+  top: 23rem;
+  z-index: 0;
 }
 
 .time-card {
@@ -97,15 +102,19 @@ body {
   align-items: center;
   padding: 2px 10px;
   gap: 10px;
-  width: 5rem;
-  height: 8rem;
+  width: 140px;
+  height: 140px;
   left: 383px;
   background: #F5F5F5;
   border-radius: 8px;
 }
 
+.no-show {
+  visibility: hidden
+}
+
 .main {
-  background-image: url('./assets/backdrop.png');
+  /* background-image: url('./assets/backdrop.png'); */
   background-repeat: repeat;
   background-size: contain;
 }
@@ -121,3 +130,264 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.arch-img {
+  width: 10rem;
+  z-index: 99;
+}
+
+.live-in {
+  width: max-content !important;
+}
+  /* For Desktop View */
+@media screen and (min-width: 1024px) {
+ 
+}
+  
+  /* For Tablet View */
+@media screen and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+  .time-card {   
+    width: 140px;
+    height: 140px;
+  }
+}
+  
+  /* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+  and (orientation: portrait) {
+  .time-card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .arch-img {
+    width: 5rem;
+    margin-left: 4rem;
+  }
+
+  .coin-one {
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    width: 7rem;
+    z-index: 0;
+  }
+
+  .coin-two {
+    position: absolute;
+    top: 17rem;
+    left: 3rem;
+    width: 2rem;
+    z-index: 0;
+  }
+
+  .coin-three {
+    left: 14rem;
+    position: absolute;
+    top: 33rem;
+    z-index: 0;
+    width: 10rem;
+  }
+
+  .coin-four {
+    left: 15rem;
+    position: absolute;
+    top: 43rem;
+    z-index: 0;
+    width: 3rem;
+  }
+}
+  
+  /* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+  and (orientation: landscape) {
+  .time-card {
+    width: 86px;
+    height: 86px;
+  }
+
+  .arch-img {
+    width: 5rem;
+    margin-left: 4rem;
+  }
+
+  .coin-one {
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    width: 7rem;
+    z-index: 0;
+  }
+
+  .coin-two {
+    position: absolute;
+    top: 17rem;
+    left: 3rem;
+    width: 2rem;
+    z-index: 0;
+  }
+
+  .coin-three {
+    left: 14rem;
+    position: absolute;
+    top: 33rem;
+    z-index: 0;
+    width: 10rem;
+  }
+
+  .coin-four {
+    left: 15rem;
+    position: absolute;
+    top: 43rem;
+    z-index: 0;
+    width: 3rem;
+  }
+}
+  
+  /* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .time-card {
+    width: 86px;
+    height: 86px;
+  }
+
+  .arch-img {
+    width: 5rem;
+    margin-left: 4rem;
+  }
+
+  .coin-one {
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    width: 7rem;
+    z-index: 0;
+  }
+
+  .coin-two {
+    position: absolute;
+    top: 17rem;
+    left: 3rem;
+    width: 2rem;
+    z-index: 0;
+  }
+
+  .coin-three {
+    left: 14rem;
+    position: absolute;
+    top: 33rem;
+    z-index: 0;
+    width: 10rem;
+  }
+  
+  .coin-four {
+    left: 15rem;
+    position: absolute;
+    top: 43rem;
+    z-index: 0;
+    width: 3rem;
+  }
+}
+  
+  /* For iPhone 4 Portrait or Landscape View */
+/* @media screen and (min-device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .time-card {
+    width: 86px;
+    height: 86px;
+  }
+} */
+  
+  /* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .time-card {
+    width: 86px;
+    height: 86px;
+  }
+
+  .arch-img {
+    width: 5rem;
+    margin-left: 4rem;
+  }
+
+  .coin-one {
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    width: 7rem;
+    z-index: 0;
+  }
+
+  .coin-two {
+    position: absolute;
+    top: 17rem;
+    left: 3rem;
+    width: 2rem;
+    z-index: 0;
+  }
+
+  .coin-three {
+    left: 14rem;
+    position: absolute;
+    top: 33rem;
+    z-index: 0;
+    width: 10rem;
+  }
+
+  .coin-four {
+    left: 15rem;
+    position: absolute;
+    top: 43rem;
+    z-index: 0;
+    width: 3rem;
+  }
+}
+  
+  /* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+  .time-card {
+    width: 86px;
+    height: 86px;
+  }
+
+  .arch-img {
+    width: 5rem;
+    margin-left: 4rem;
+  }
+
+  .coin-one {
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    width: 7rem;
+    z-index: 0;
+  }
+
+  .coin-two {
+    position: absolute;
+    top: 17rem;
+    left: 3rem;
+    width: 2rem;
+    z-index: 0;
+  }
+
+  .coin-three {
+    left: 14rem;
+    position: absolute;
+    top: 33rem;
+    z-index: 0;
+    width: 10rem;
+  }
+
+  .coin-four {
+    left: 15rem;
+    position: absolute;
+    top: 43rem;
+    z-index: 0;
+    width: 3rem;
+  }
+}
+  
